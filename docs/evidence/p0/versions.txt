@@ -1,0 +1,14 @@
+# toolchain — generated 2026-10-14T18:00:27+05:30
+node v22.22.3
+npm 10.9.8
+python(PATH) Python 3.11.9 at %USERPROFILE%\AppData\Local\hermes\hermes-agent\venv\Scripts\python.exe
+py-launcher  -V:3.11 * %USERPROFILE%\AppData\Local\Programs\Python\Python311\python.exe
+;
+uv uv 0.11.20 (9252ba6b5 2026-06-10 x86_64-pc-windows-msvc)
+git git version 2.54.0.windows.1
+ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers
+ffmpeg_path %USERPROFILE%/AppData/Local/Microsoft/WinGet/Packages/Gyan.FFmpeg_Microsoft.Winget.Source_8wekyb3d8bbwe/ffmpeg-8.1.2-full_build/bin/ffmpeg
+chrome 155.0.8059.79
+os Microsoft Windows 11 Pro build 26200
+cpu AMD Ryzen 7 9800X3D 8-Core Processor           
+ram_gb 31.1

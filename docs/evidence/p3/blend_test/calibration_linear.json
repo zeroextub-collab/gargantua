@@ -1,0 +1,43 @@
+{
+ "edge_soft": 0.05,
+ "blending": "linear",
+ "method": "render-and-compare on work/bench/volumes/sparse_overhead.gvol at the reel's recording size",
+ "source_frame0_mean_luma": 148.44,
+ "exposure": {
+  "fitted": 0.7565,
+  "rendered_face_luma": 148.44
+ },
+ "density": {
+  "fitted_density_scale": 0.959,
+  "targets": [
+   {
+    "pose": "topdown_3.8 (fitted)",
+    "reel": 0.371,
+    "render": 0.379
+   },
+   {
+    "pose": "band_1.7 (fitted)",
+    "reel": 0.253,
+    "render": 0.247
+   },
+   {
+    "pose": "inside_7.2 (diagnostic, not fitted)",
+    "reel": 0.563,
+    "render": 0.718
+   }
+  ],
+  "front_face_median": 103.67,
+  "topdown_haze_median": 39.24,
+  "topdown_silhouette_share": 0.53,
+  "reel_topdown_cube_share": 0.443,
+  "objective": 0.00102,
+  "tauTarget_base": 0.291,
+  "tauTarget_fitted": 0.2791,
+  "diagnostic_1p7s_lowerleft": {
+   "reel": 0.253,
+   "render": 0.2471,
+   "cells": 450
+  }
+ },
+ "errors": []
+}

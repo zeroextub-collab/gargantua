@@ -1,0 +1,55 @@
+{
+ "volume": "clip8.gvol",
+ "mask_frac": 0.0603,
+ "regions": {
+  "screen: UC sign": {
+   "kind": "screen",
+   "region_std": 18.24,
+   "unexplained": 0.906,
+   "peak_rel": 3.45,
+   "mask_cover": 0.848
+  },
+  "screen: centre building top": {
+   "kind": "screen",
+   "region_std": 16.75,
+   "unexplained": 0.881,
+   "peak_rel": 1.53,
+   "mask_cover": 0.859
+  },
+  "screen: centre building middle": {
+   "kind": "screen",
+   "region_std": 17.94,
+   "unexplained": 0.957,
+   "peak_rel": 4.5,
+   "mask_cover": 0.942
+  },
+  "screen: right, lower": {
+   "kind": "screen",
+   "region_std": 14.35,
+   "unexplained": 0.841,
+   "peak_rel": 4.49,
+   "mask_cover": 0.858
+  },
+  "walkers: crowd centre": {
+   "kind": "walkers",
+   "region_std": 22.99,
+   "unexplained": 0.223,
+   "peak_rel": -0.1,
+   "mask_cover": 0.0
+  },
+  "walkers: crowd on bright stripes": {
+   "kind": "walkers",
+   "region_std": 25.16,
+   "unexplained": 0.65,
+   "peak_rel": 0.69,
+   "mask_cover": 0.0
+  },
+  "static: lit facade": {
+   "kind": "static",
+   "region_std": 2.44,
+   "unexplained": 0.986,
+   "peak_rel": 1.86,
+   "mask_cover": 0.0
+  }
+ }
+}

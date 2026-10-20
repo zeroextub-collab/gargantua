@@ -1,0 +1,70 @@
+# P0 input facts — generated 2026-10-14T18:00:08+05:30
+
+## refs/reel.mp4  (5151161 bytes)
+codec_name=h264
+profile=Main
+width=874
+height=880
+sample_aspect_ratio=1:1
+pix_fmt=yuv420p
+color_range=unknown
+color_space=unknown
+color_transfer=unknown
+color_primaries=unknown
+r_frame_rate=30/1
+avg_frame_rate=30/1
+duration=12.933300
+bits_per_raw_sample=8
+nb_frames=388
+audio_streams=1
+nb_read_frames=388
+frame_interval_s min=0.03333 max=0.03333 mean=0.03333 last_ts=12.9000
+decode_error_lines=0
+mean_volume: -91.0 dB max_volume: -91.0 dB 
+
+## input/Video_Project_8.mp4  (36892394 bytes)
+codec_name=h264
+profile=Main
+width=1920
+height=1080
+sample_aspect_ratio=1:1
+pix_fmt=yuv420p
+color_range=unknown
+color_space=unknown
+color_transfer=unknown
+color_primaries=unknown
+r_frame_rate=30/1
+avg_frame_rate=30/1
+duration=14.066667
+bits_per_raw_sample=8
+nb_frames=422
+audio_streams=1
+nb_read_frames=422
+frame_interval_s min=0.03333 max=0.03333 mean=0.03333 last_ts=14.0333
+decode_error_lines=0
+mean_volume: -21.0 dB max_volume: -4.3 dB 
+
+## input/walk_portrait_4k.mp4  (25347379 bytes)
+codec_name=h264
+profile=High
+width=2160
+height=3840
+sample_aspect_ratio=N/A
+pix_fmt=yuv420p
+color_range=tv
+color_space=bt709
+color_transfer=bt709
+color_primaries=bt709
+r_frame_rate=30000/1001
+avg_frame_rate=30000/1001
+duration=9.309300
+bits_per_raw_sample=8
+nb_frames=279
+audio_streams=0
+nb_read_frames=279
+frame_interval_s min=0.03337 max=0.03337 mean=0.03337 last_ts=9.2759
+decode_error_lines=0
+
+## reference stills
+refs/still_181336.png 882,837,rgba
+refs/still_182136.png 896,897,rgba

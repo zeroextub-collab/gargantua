@@ -1,0 +1,26 @@
+{
+  "name": "gargantua",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Browser space-time cube viewer: any clip of up to 15 s becomes an interactive (x, y, t) volume.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --config viewer/vite.config.ts",
+    "build": "vite build --config viewer/vite.config.ts",
+    "preview": "vite preview --config viewer/vite.config.ts",
+    "typecheck": "tsc -p viewer/tsconfig.json --noEmit",
+    "test": "node --test --experimental-strip-types \"viewer/tests/*.test.ts\"",
+    "export": "node tools/export/export.mjs"
+  },
+  "devDependencies": {
+    "@fontsource/ibm-plex-mono": "5.3.0",
+    "@fontsource/instrument-serif": "5.3.0",
+    "@types/node": "22.20.4",
+    "@types/three": "0.186.0",
+    "playwright-core": "1.63.0",
+    "three": "0.186.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.1"
+  }
+}

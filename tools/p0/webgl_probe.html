@@ -1,0 +1,47 @@
+<!doctype html>
+<html><body><pre id="out">pending</pre>
+<script>
+// P0 probe: which adapter does WebGL2 use, what are the 3D texture limits,
+// and can each volume tier actually be allocated AND filled (texStorage alone may be lazy).
+const o = {};
+try {
+  const c = document.createElement('canvas');
+  const gl = c.getContext('webgl2', { powerPreference: 'high-performance', antialias: false });
+  if (!gl) { o.error = 'no webgl2 context'; }
+  else {
+    const dbg = gl.getExtension('WEBGL_debug_renderer_info');
+    o.vendor = dbg ? gl.getParameter(dbg.UNMASKED_VENDOR_WEBGL) : gl.getParameter(gl.VENDOR);
+    o.renderer = dbg ? gl.getParameter(dbg.UNMASKED_RENDERER_WEBGL) : gl.getParameter(gl.RENDERER);
+    o.version = gl.getParameter(gl.VERSION);
+    o.MAX_3D_TEXTURE_SIZE = gl.getParameter(gl.MAX_3D_TEXTURE_SIZE);
+    o.MAX_TEXTURE_SIZE = gl.getParameter(gl.MAX_TEXTURE_SIZE);
+    o.MAX_ARRAY_TEXTURE_LAYERS = gl.getParameter(gl.MAX_ARRAY_TEXTURE_LAYERS);
+    o.MAX_RENDERBUFFER_SIZE = gl.getParameter(gl.MAX_RENDERBUFFER_SIZE);
+    o.MAX_VIEWPORT_DIMS = Array.from(gl.getParameter(gl.MAX_VIEWPORT_DIMS));
+    o.MAX_SAMPLES = gl.getParameter(gl.MAX_SAMPLES);
+    o.MAX_COLOR_ATTACHMENTS = gl.getParameter(gl.MAX_COLOR_ATTACHMENTS);
+    o.ext = ['EXT_color_buffer_float', 'EXT_color_buffer_half_float', 'OES_texture_float_linear',
+             'EXT_disjoint_timer_query_webgl2', 'KHR_parallel_shader_compile', 'EXT_texture_norm16']
+            .map(n => n + '=' + (gl.getExtension(n) ? 'yes' : 'no'));
+    const tiers = [[360, 640, 279], [540, 960, 279], [960, 540, 422], [720, 1280, 279]];
+    o.alloc = [];
+    for (const [w, h, d] of tiers) {
+      const t0 = performance.now();
+      const tex = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_3D, tex);
+      gl.texStorage3D(gl.TEXTURE_3D, 1, gl.RGBA8, w, h, d);
+      const eStore = gl.getError();
+      const slice = new Uint8Array(w * h * 4);
+      for (let i = 0; i < slice.length; i += 4) { slice[i] = 128; slice[i + 3] = 255; }
+      for (let z = 0; z < d; z++) gl.texSubImage3D(gl.TEXTURE_3D, 0, 0, 0, z, w, h, 1, gl.RGBA, gl.UNSIGNED_BYTE, slice);
+      gl.finish();
+      const eFill = gl.getError();
+      o.alloc.push({ tier: `${w}x${h}x${d}`, MB: +(w * h * d * 4 / 1e6).toFixed(1), storeErr: eStore, fillErr: eFill,
+                     lost: gl.isContextLost(), ms: Math.round(performance.now() - t0) });
+      gl.deleteTexture(tex);
+      gl.finish();
+    }
+  }
+} catch (e) { o.exception = String(e); }
+document.getElementById('out').textContent = 'PROBE_RESULT ' + JSON.stringify(o);
+</script></body></html>

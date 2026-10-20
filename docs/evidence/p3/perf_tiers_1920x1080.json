@@ -1,0 +1,542 @@
+[
+ {
+  "volume": "clip8_S.gvol",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "dims": [
+   640,
+   360,
+   422
+  ],
+  "voxelMB": 390.262096,
+  "estimateMB": 486.659944,
+  "viewport": [
+   1920,
+   1080
+  ],
+  "runs": {
+   "solid": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 0.5999999046325684,
+     "wallMsP95": 0.7999999523162842,
+     "gpuVolumeMsMedian": 0.020736,
+     "fpsFromWall": 1666.666931576241,
+     "vramEstimateMB": 486.659944,
+     "plausible": false,
+     "timerAgrees": false
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 0.5999999046325684,
+     "wallMsP95": 0.7000000476837158,
+     "gpuVolumeMsMedian": 0.040416,
+     "fpsFromWall": 1666.666931576241,
+     "vramEstimateMB": 512.040808,
+     "plausible": false,
+     "timerAgrees": false
+    }
+   },
+   "dissolve": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 1.2000000476837158,
+     "wallMsP95": 1.4000000953674316,
+     "gpuVolumeMsMedian": 0.675136,
+     "fpsFromWall": 833.3333002196431,
+     "vramEstimateMB": 486.659944,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 1.8000001907348633,
+     "wallMsP95": 2.1999998092651367,
+     "gpuVolumeMsMedian": 1.247168,
+     "fpsFromWall": 555.5554966867768,
+     "vramEstimateMB": 512.040808,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "smoke": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 1.4000000953674316,
+     "wallMsP95": 1.7000000476837158,
+     "gpuVolumeMsMedian": 0.917248,
+     "fpsFromWall": 714.2856656288648,
+     "vramEstimateMB": 486.659944,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 2.200000047683716,
+     "wallMsP95": 2.5,
+     "gpuVolumeMsMedian": 1.552128,
+     "fpsFromWall": 454.54544469344734,
+     "vramEstimateMB": 512.040808,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "separated": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 1.4000000953674316,
+     "wallMsP95": 1.7999999523162842,
+     "gpuVolumeMsMedian": 0.888096,
+     "fpsFromWall": 714.2856656288648,
+     "vramEstimateMB": 486.659944,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 2.3999998569488525,
+     "wallMsP95": 2.799999952316284,
+     "gpuVolumeMsMedian": 1.756672,
+     "fpsFromWall": 416.6666915019368,
+     "vramEstimateMB": 512.040808,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   }
+  },
+  "vram_used_mb": {
+   "before": 2834,
+   "after_load": 3435,
+   "delta": 601
+  },
+  "errors": []
+ },
+ {
+  "volume": "walk4k_S.gvol",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "dims": [
+   360,
+   640,
+   279
+  ],
+  "voxelMB": 258.408496,
+  "estimateMB": 351.83872,
+  "viewport": [
+   1920,
+   1080
+  ],
+  "runs": {
+   "solid": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 0.5,
+     "wallMsP95": 0.7000000476837158,
+     "gpuVolumeMsMedian": 0.009568,
+     "fpsFromWall": 2000,
+     "vramEstimateMB": 351.83872,
+     "plausible": false,
+     "timerAgrees": false
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 0.5999999046325684,
+     "wallMsP95": 0.7000000476837158,
+     "gpuVolumeMsMedian": 0.022272,
+     "fpsFromWall": 1666.666931576241,
+     "vramEstimateMB": 377.219584,
+     "plausible": false,
+     "timerAgrees": false
+    }
+   },
+   "dissolve": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 0.8999998569488525,
+     "wallMsP95": 1.2000000476837158,
+     "gpuVolumeMsMedian": 0.432864,
+     "fpsFromWall": 1111.1112877174942,
+     "vramEstimateMB": 351.83872,
+     "plausible": false,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 1.5,
+     "wallMsP95": 1.8999998569488525,
+     "gpuVolumeMsMedian": 1.027712,
+     "fpsFromWall": 666.6666666666666,
+     "vramEstimateMB": 377.219584,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "smoke": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 1,
+     "wallMsP95": 1.2000000476837158,
+     "gpuVolumeMsMedian": 0.521952,
+     "fpsFromWall": 1000,
+     "vramEstimateMB": 351.83872,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 1.7999999523162842,
+     "wallMsP95": 2.0999999046325684,
+     "gpuVolumeMsMedian": 1.202144,
+     "fpsFromWall": 555.5555702727522,
+     "vramEstimateMB": 377.219584,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "separated": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 1,
+     "wallMsP95": 1.2999999523162842,
+     "gpuVolumeMsMedian": 0.53504,
+     "fpsFromWall": 1000,
+     "vramEstimateMB": 351.83872,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 1.7999999523162842,
+     "wallMsP95": 2,
+     "gpuVolumeMsMedian": 1.240096,
+     "fpsFromWall": 555.5555702727522,
+     "vramEstimateMB": 377.219584,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   }
+  },
+  "vram_used_mb": {
+   "before": 2827,
+   "after_load": 3266,
+   "delta": 439
+  },
+  "errors": []
+ },
+ {
+  "volume": "clip8.gvol",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "dims": [
+   960,
+   540,
+   422
+  ],
+  "voxelMB": 878.087776,
+  "estimateMB": 973.192072,
+  "viewport": [
+   1920,
+   1080
+  ],
+  "runs": {
+   "solid": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 0.7000000476837158,
+     "wallMsP95": 0.9000000953674316,
+     "gpuVolumeMsMedian": 0.185696,
+     "fpsFromWall": 1428.5713312577295,
+     "vramEstimateMB": 973.192072,
+     "plausible": false,
+     "timerAgrees": false
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 0.7999999523162842,
+     "wallMsP95": 1,
+     "gpuVolumeMsMedian": 0.275072,
+     "fpsFromWall": 1250.0000745058105,
+     "vramEstimateMB": 998.572936,
+     "plausible": false,
+     "timerAgrees": true
+    }
+   },
+   "dissolve": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 10.599999904632568,
+     "wallMsP95": 11.900000095367432,
+     "gpuVolumeMsMedian": 10.113088,
+     "fpsFromWall": 94.33962349027618,
+     "vramEstimateMB": 973.192072,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 13.799999952316284,
+     "wallMsP95": 22,
+     "gpuVolumeMsMedian": 13.464736,
+     "fpsFromWall": 72.4637683663291,
+     "vramEstimateMB": 998.572936,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "smoke": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 13.899999856948853,
+     "wallMsP95": 15.5,
+     "gpuVolumeMsMedian": 13.362528,
+     "fpsFromWall": 71.94244678355753,
+     "vramEstimateMB": 973.192072,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 21.700000047683716,
+     "wallMsP95": 34.59999990463257,
+     "gpuVolumeMsMedian": 24.89088,
+     "fpsFromWall": 46.0829492074928,
+     "vramEstimateMB": 998.572936,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "separated": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 12.899999856948853,
+     "wallMsP95": 14.099999904632568,
+     "gpuVolumeMsMedian": 12.053536,
+     "fpsFromWall": 77.51938070459197,
+     "vramEstimateMB": 973.192072,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 29,
+     "wallMsP95": 39.799999952316284,
+     "gpuVolumeMsMedian": 26.696064,
+     "fpsFromWall": 34.48275862068966,
+     "vramEstimateMB": 998.572936,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   }
+  },
+  "vram_used_mb": {
+   "before": 2819,
+   "after_load": 4032,
+   "delta": 1213
+  },
+  "errors": []
+ },
+ {
+  "volume": "walk4k.gvol",
+  "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 5070 (0x00002F04) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+  "dims": [
+   720,
+   1280,
+   279
+  ],
+  "voxelMB": 1033.621696,
+  "estimateMB": 1127.401912,
+  "viewport": [
+   1920,
+   1080
+  ],
+  "runs": {
+   "solid": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 0.5,
+     "wallMsP95": 0.7999999523162842,
+     "gpuVolumeMsMedian": 0.0792,
+     "fpsFromWall": 2000,
+     "vramEstimateMB": 1127.401912,
+     "plausible": false,
+     "timerAgrees": false
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 0.6000001430511475,
+     "wallMsP95": 0.7999999523162842,
+     "gpuVolumeMsMedian": 0.14352,
+     "fpsFromWall": 1666.666269302463,
+     "vramEstimateMB": 1152.782776,
+     "plausible": false,
+     "timerAgrees": false
+    }
+   },
+   "dissolve": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 8.099999904632568,
+     "wallMsP95": 10.099999904632568,
+     "gpuVolumeMsMedian": 7.55584,
+     "fpsFromWall": 123.45679157700705,
+     "vramEstimateMB": 1127.401912,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 9.400000095367432,
+     "wallMsP95": 18.399999856948853,
+     "gpuVolumeMsMedian": 10.407488,
+     "fpsFromWall": 106.38297764409879,
+     "vramEstimateMB": 1152.782776,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "smoke": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 11.099999904632568,
+     "wallMsP95": 12.900000095367432,
+     "gpuVolumeMsMedian": 10.33584,
+     "fpsFromWall": 90.09009086411356,
+     "vramEstimateMB": 1127.401912,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 19.200000047683716,
+     "wallMsP95": 28.5,
+     "gpuVolumeMsMedian": 17.9128,
+     "fpsFromWall": 52.083333203982974,
+     "vramEstimateMB": 1152.782776,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   },
+   "separated": {
+    "interactive": {
+     "quality": "interactive",
+     "width": 1920,
+     "height": 1080,
+     "frames": 180,
+     "wallMsMedian": 11,
+     "wallMsP95": 12.5,
+     "gpuVolumeMsMedian": 10.471488,
+     "fpsFromWall": 90.9090909090909,
+     "vramEstimateMB": 1127.401912,
+     "plausible": true,
+     "timerAgrees": true
+    },
+    "idle": {
+     "quality": "idle",
+     "width": 1920,
+     "height": 1080,
+     "frames": 90,
+     "wallMsMedian": 20.5,
+     "wallMsP95": 29.299999952316284,
+     "gpuVolumeMsMedian": 19.561728,
+     "fpsFromWall": 48.78048780487805,
+     "vramEstimateMB": 1152.782776,
+     "plausible": true,
+     "timerAgrees": true
+    }
+   }
+  },
+  "vram_used_mb": {
+   "before": 2821,
+   "after_load": 4008,
+   "delta": 1187
+  },
+  "errors": []
+ }
+]

@@ -1,0 +1,35 @@
+{
+ "1_static_sharpness": {
+  "headon_smoke_over_solid": 0.551,
+  "oblique_smoke_over_solid": 0.021,
+  "expectation": "head-on ratio well above the oblique ratio (static detail survives only along the time axis)"
+ },
+ "2_movers_ghost": {
+  "ncc_with_time_mean": 0.72,
+  "at_walker_pixels_mean_abs_diff_to_time_mean": 59.1,
+  "at_walker_pixels_mean_abs_diff_to_the_frame": 101.8,
+  "ratio_time_mean_over_frame": 0.581,
+  "expectation": "at walker pixels the smoke image matches the time mean (walker faded), not the frame"
+ },
+ "3_stripes_in_smoke": {
+  "reel_amp": 0.103,
+  "separated_amp": 0.0073,
+  "stripe_period_px": 19.2,
+  "reel_band_luma": 33.0,
+  "expectation": "energy at the stripe frequency in REEL, (near) none in SEPARATED"
+ },
+ "4_haze_hue": {
+  "pavement_on_solid_face": {
+   "hue_deg": 84.6,
+   "chroma": 6.17,
+   "L": 55.1
+  },
+  "haze_in_dissolve": {
+   "hue_deg": 91.6,
+   "chroma": 2.45,
+   "L": 12.9
+  },
+  "expectation": "same hue family (raw colour at low opacity), lower chroma and lightness"
+ },
+ "verdict": "PASS"
+}

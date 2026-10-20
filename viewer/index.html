@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content="GARGANTUA: turn any short clip into an interactive space-time cube (x, y, t)." />
+    <title>GARGANTUA — space-time cube</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23000'/%3E%3Cpath d='M6 11l10-5 10 5v11l-10 5-10-5z' fill='none' stroke='%23a9b8ff' stroke-width='1.5'/%3E%3Cpath d='M6 11l10 5 10-5M16 16v11' fill='none' stroke='%23e8a46a' stroke-width='1.5'/%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <div id="stage"></div>
+    <header id="brand">
+      <h1>Gargantua<b>.</b></h1>
+      <div class="sub"><span>space-time cube</span><span id="clipname">no clip</span></div>
+    </header>
+    <div id="chip"></div>
+    <div id="hud" aria-live="off"></div>
+    <div id="empty"><p>Drop a video of up to 15 seconds<small>or a .gvol volume · or press O</small></p></div>
+    <div id="progress"></div>
+    <div id="status" role="status" aria-live="polite"></div>
+    <div id="toasts"></div>
+    <div id="drop"><p>Release to build the cube<small>video ≤ 15 s (longer clips are trimmed) · .gvol</small></p></div>
+    <button id="menu-btn" class="btn" type="button" aria-label="Toggle controls">Controls</button>
+    <div id="help" role="dialog" aria-modal="true" aria-label="Keyboard shortcuts"></div>
+    <input id="file" type="file" accept="video/*,.gvol,.json" hidden />
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
