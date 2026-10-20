@@ -25,7 +25,7 @@ Requirements: Node 22, Python 3.11 with [uv](https://docs.astral.sh/uv/), ffmpeg
 Google Chrome (used for headless export; no browser is downloaded).
 
 ```bash
-git clone https://github.com/OWNER/gargantua && cd gargantua
+git clone https://github.com/zeroextub-collab/gargantua && cd gargantua
 npm ci --ignore-scripts                       # viewer + tools
 uv sync --project pipeline                    # Python pipeline (numpy, opencv-python-headless)
 npm run dev                                   # http://127.0.0.1:5178
